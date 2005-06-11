@@ -1,4 +1,4 @@
-Summary:	KoolDock is a dock for KDE with cool visual enhancements and effects.
+Summary:	KoolDock is a dock for KDE with cool visual enhancements and effects
 Name:		kooldock
 Version:	0.3
 Release:	0.1
@@ -18,11 +18,11 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 KoolDock is a dock for KDE with cool visual enhancements and effects. 
 KoolDock is a fork of the original work of Dang Viet Dung, KSmoothDock
 Some of it features are:
-    * Display quick launchers to your favourite apps
-    * A builtin task bar
-    * Pager and clock. (Not done yet)
-    * Smooth zooming effect (like Apple's OS X dock)
-    * Transparent Background
+ - Display quick launchers to your favourite apps
+ - A builtin task bar
+ - Pager and clock. (Not done yet)
+ - Smooth zooming effect (like Apple's OS X dock)
+ - Transparent Background
 
 %prep
 %setup -q -n %{name}
