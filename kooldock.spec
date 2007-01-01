@@ -1,18 +1,19 @@
 Summary:	KoolDock - a dock for KDE with cool visual enhancements and effects
 Summary(pl):	KoolDock - dok dla KDE z rozszerzeniami i efektami wizualnymi
 Name:		kooldock
-Version:	0.3
+Version:	0.4.1
 Release:	0.1
 License:	GPL v2
 Group:		KDE/Applications
-Source0:	http://ktown.kde.cl/kooldock/dist/%{name}-%{version}.tar.gz
-# Source0-md5:	a53b74ce56f65b738413205cd9bfe2ca
+Source0:	http://kde-apps.org/content/files/50910-%{name}.tar.gz
+# Source0-md5:	f7cad0e1b518c5c8be1b3f5c536807be
 URL:		http://ktown.kde.cl/kooldock/
+Patch0:		kde-ac260-lt.patch
+Patch1:		%{name}-am110.patch
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	kdelibs-devel >= 9:3.2.0
 BuildRequires:	rpmbuild(macros) >= 1.129
-BuildRequires:	unsermake >= 040805
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -37,10 +38,12 @@ Niektóre z mo¿liwo¶ci to:
 
 %prep
 %setup -q -n %{name}
+%patch0 -p1
+%patch1 -p0
 
 %build
 cp -f /usr/share/automake/config.sub admin
-
+%{__make} -f admin/Makefile.common cvs
 %configure \
 %if "%{_lib}" == "lib64"
 	--enable-libsuffix=64 \
