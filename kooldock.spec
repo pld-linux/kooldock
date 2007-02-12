@@ -1,5 +1,5 @@
 Summary:	KoolDock - a dock for KDE with cool visual enhancements and effects
-Summary(pl):	KoolDock - dok dla KDE z rozszerzeniami i efektami wizualnymi
+Summary(pl.UTF-8):   KoolDock - dok dla KDE z rozszerzeniami i efektami wizualnymi
 Name:		kooldock
 Version:	0.4.3
 Release:	1
@@ -26,15 +26,15 @@ Some of it features are:
  - Smooth zooming effect (like Apple's OS X dock)
  - Transparent Background
 
-%description -l pl
+%description -l pl.UTF-8
 KoolDock to dok dla kDE z rozszerzeniami i efektami wizualnymi. Jest
 to fork oryginalnego projektu KSmoothDock autorstwa Dang Viet Dunga.
-NiektÛre z moøliwo∂ci to:
-- wy∂wietlanie przyciskÛw szybkiego uruchomienia ulubionych aplikacji
-- wbudowany pasek zadaÒ
+Niekt√≥re z mo≈ºliwo≈õci to:
+- wy≈õwietlanie przycisk√≥w szybkiego uruchomienia ulubionych aplikacji
+- wbudowany pasek zada≈Ñ
 - pager i zegar (jeszcze nie gotowe)
-- efekt p≥ynnego powiÍkszania (jak w doku OS X Apple'a)
-- przezroczyste t≥o
+- efekt p≈Çynnego powiƒôkszania (jak w doku OS X Apple'a)
+- przezroczyste t≈Ço
 
 %prep
 %setup -q -n %{name}
