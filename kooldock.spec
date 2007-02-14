@@ -1,12 +1,12 @@
 Summary:	KoolDock - a dock for KDE with cool visual enhancements and effects
 Summary(pl.UTF-8):	KoolDock - dok dla KDE z rozszerzeniami i efektami wizualnymi
 Name:		kooldock
-Version:	0.4.3
+Version:	0.4.4
 Release:	1
 License:	GPL v2
 Group:		KDE/Applications
-Source0:	http://kde-apps.org/content/files/50910-%{name}.tar.gz
-# Source0-md5:	ae91681dbc26a4f34cb4a454c7669d34
+Source0:	http://kde-apps.org/CONTENT/content-files//50910-%{name}.tar.gz
+# Source0-md5:	300bad523529499f862f62a7d97ce64f
 URL:		http://ktown.kde.cl/kooldock/
 Patch0:		kde-ac260-lt.patch
 Patch1:		%{name}-am110.patch
