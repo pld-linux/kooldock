@@ -5,8 +5,8 @@ Version:	0.4.7
 Release:	1
 License:	GPL v2
 Group:		KDE/Applications
-Source0:	http://kde-apps.org/CONTENT/content-files//50910-%{name}.tar.gz
-# Source0-md5:	defbc733b82865fc3365098956f03898
+Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.bz2
+# Source0-md5:	00103ac218865125de91bdbc4507f7d8
 URL:		http://ktown.kde.cl/kooldock/
 BuildRequires:	autoconf
 BuildRequires:	automake
